@@ -1,6 +1,8 @@
 var c = null ;
 let localStorage = window.localStorage;
 
+/*This function sends a HTTP request to the given server and then returns the answer of it as a JSON query and then if there is no error,
+It updates the right column boxes values (Called after submit button is clicked)*/
 function submit() {
     let username = isValidName();
 
@@ -57,6 +59,7 @@ function submit() {
     }
 }
 
+/*Checks the returned response from server and stores it in the localStorage*/
 function save(){
     let res = c;
     if (res != null){
@@ -72,6 +75,7 @@ function save(){
     }
 }
 
+/*Removes data from localStorage and if there is no such data in localStorage it shows a fault message in notification panel*/
 function remove(){
     let res = c;
     console.log(document.getElementById("savedScore").style.display)
@@ -87,6 +91,7 @@ function remove(){
     }
 }
 
+/*Checks if the entered name is valid or not*/
 function isValidName(){
     let username = document.forms["findGender"]["username"].value;
     const pattern = /^[a-zA-Z_ ]*$/;
@@ -110,6 +115,7 @@ function isValidName(){
     }
 }
 
+/*Notification error panel function that shows a message in notification panel with a transition and makes it disappeared*/
 function err(message) {
     console.log(message);
 

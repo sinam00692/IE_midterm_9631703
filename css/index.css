@@ -1,3 +1,4 @@
+/*Settings to be applied to whole webpage*/
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*Adds background of the webpage and specifies the place of whole items in the center*/
 body {
     background: url("../img/back.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -17,32 +19,27 @@ body {
     justify-content: center;
 }
 
+/*Container of the items background color and margins of it from main frame is specified and a border radius of 8 pixels is added*/
 .main {
     background: rgba(17, 6, 6, 0.8);
     
     margin-top: 100px;
     margin-bottom: 100px;
 
-    border-radius: 8px 8px 8px 8px;
-    border-color: #23282d;
+    border-radius: 8px;
 }
 
+/*The flex component and it's type is specified and alignment of the items are centered and a small margin is added*/
 .container {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 100%;
     margin: 10px;
 }
 
+/*for each of the columns of the flexes borders and background is specified and thier needed margin is added */
 .column-class{
     flex: 1;
-    padding: 20px;    
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     margin: 10px;
     font-size: 14px;
@@ -52,11 +49,11 @@ body {
     min-width: 300px;
 }
 
+/*Title of the forum is colored and it's paddings and margins are added*/
 .formlisthead {
     padding: 20px 15px;
     text-align: center;
     background-color: #f4511e;
-    border-color: aquamarine;
     border-radius: 5px 5px 0 0;
     color: #fff;
     font-size: 30px;
@@ -65,18 +62,21 @@ body {
     margin-bottom: 15px;
 }
 
+/*Name label color specified and it's place is arranged*/
 #name {
     color: #FFFFFF;
     margin-left: 10%;
 }
 
+/*TextField is arranged and the transitions are added after clicking the textField
+place of the textField is also specified*/
 .hover {
     transition-duration:1s;
     transition-timing-function:ease-out;
     border:2px solid rgba(236, 231, 231, 0.4);
     max-width: 300px;
     text-align: center;
-    margin: 10px auto 0;
+    margin: 10px;
     background: rgba(58, 8, 124, 0.0);
     color: rgba(255, 255, 255, 1);
     border-radius: 5px;
@@ -85,11 +85,13 @@ body {
     margin-left: 20%;
 }
 
+/*After focus on the textField it's width grows and margins get smaller*/
 .hover:focus{
     margin-left: 10%;
     width:80%;
 }
 
+/*Button styles are added and thier margins and color specified*/
 .form-button {
     border-radius: 4px;
     background-color: #f4511e;
@@ -104,7 +106,8 @@ body {
     margin-left: 10%;
     margin-top: 5px;
 }
-  
+
+/*When a button spans and the transition done during the spanning is specified*/
 .form-button span {
     cursor: pointer;
     display: inline-block;
@@ -112,6 +115,7 @@ body {
     transition: 0.5s;
 }
   
+/*After button spanned it's text position is corrected*/
 .form-button span:after {
     content: '\00bb';
     position: absolute;
@@ -121,15 +125,18 @@ body {
     transition: 0.5s;
 }
  
+/*when hovered on button it grows*/
 .form-button:hover span {
     padding-right: 25px;
 }
   
+/*After hovering on button it gets less transparent and moved to right*/
 .form-button:hover span:after {
     opacity: 1;
     right: 0;
 }
 
+/*Color and position of the selection text is set*/
 .par {
     color: #FFFFFF;
     margin-left: 10%;
@@ -137,6 +144,7 @@ body {
     margin-bottom: 5px;
 }
 
+/*Sets style of the radio buttons*/
 .wrapper{
     display: inline-flex;
     height: 50px;
@@ -147,6 +155,7 @@ body {
     padding: 5px 5px;
     margin-left: 10%;
 }
+/*Sets the option circle of the radio button style*/
 .wrapper .option{
     height: 100%;
     width: 100%;
@@ -160,6 +169,7 @@ body {
     border: 2px solid lightgrey;
     transition: all 0.3s ease;
 }
+/*Set the option dot dtyle relative to option circle*/
 .wrapper .option .dot{
     height: 10px;
     width: 10px;
@@ -167,6 +177,7 @@ body {
     border-radius: 50%;
     position: relative;
 }
+/*Adds a transition for changing radio button based on the choice selected*/
 .wrapper .option .dot::before{
     position: absolute;
     content: "";
@@ -206,6 +217,7 @@ input[type="radio"]{
     color: #fff;
 }
 
+/*Sets the style of perdiction box on the right column*/
 .perdiction{
     height: 40%;
     color: #FFFFFF;
@@ -216,6 +228,7 @@ input[type="radio"]{
     background-color: rgba(8, 49, 124, 0.25);
 }
 
+/*Sets the style of answer box on the right column*/
 .answer{
     height: 40%;
     color: #FFFFFF;
@@ -226,15 +239,17 @@ input[type="radio"]{
     background-color: rgba(8, 49, 124, 0.25);
 }
 
+/*Main texts of the right column boxes style*/
 .texts {
     padding: 5px 5px 0 0;
 }
-
+/*Minor texts of the right column boxes style*/
 .texts1 {
     margin-left: 10%;
     padding: 5px 5px 0 0;
 }
 
+/*Notification panel style is set*/
 .notify {
     position: fixed;
     top: 20px;
@@ -248,7 +263,7 @@ input[type="radio"]{
     max-height: 10%;
     border-radius: 8px;
 }
-
+/*Notification panel text style*/
 #notifierText{
     margin-top: 0.5%;
     margin-bottom: 0.5%;
