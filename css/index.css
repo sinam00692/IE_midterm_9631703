@@ -4,11 +4,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     box-sizing: border-box;
 }
-/*  
-    Add background image and set the container div. 
-    - The goal here is a background image on a website that covers the entire browser window at all times.
-    - For centering its inside container, I used flexbox to center container both horizontally and vertically.
-*/
+
 body {
     background: url("../img/back.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -20,4 +16,55 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.main {
+    background: #ffffff;
+    margin-left: 400px;
+    margin-right: 4px;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border-color: #23282d;
+    width: 800px;
+}
+
+.formlisthead {
+    margin: 5px;
+    padding: 20px 15px;
+    text-align: center;
+    background: #5cbbff;
+    border-color: aquamarine;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'main', sans-serif;
+}
+
+.hover {
+    transition-duration:1s;
+    transition-timing-function:ease-out;
+    border:none;
+    border-bottom:3px solid rgba(0,0,0,0.4);
+    color: #3F00CE;
+    max-width: 330px;
+    text-align: center;
+    margin: 5px auto 0;
+    background: #FCFCFC;
+    border-radius: 5px;
+    -webkit-border-radius: 4px;
+    height: 50px;
+    width: 200px;
+
+
+}
+.hover:focus{
+    width:270px;
+}
+
+div.continer:hover div:not(.hover){
+    opacity:1;
+    left:0px;
+    color:white;
 }

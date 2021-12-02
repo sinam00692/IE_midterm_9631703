@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>NameGender</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="mainFrame" class="main">
+        <div id="contentFrame" class="container">
+            <div id="forum" class="column-class">
+                <div class="formlisthead">
+                    <div>
+                        <img  src="./img/form.png" width="20" height="23">
+                        Mr. Ms.
+                    </div>
+                </div>
+                <form name="findGender" action="">
+                    <div class="form-item">
+                        <div>
+                            <label id="name" for="username">Name:</label>
+                            <input name="username" id="username" type="text" class="hover">
+                        </div>
+                    </div>
+                    
+                    <p>Specified gender:</p>
+                    <input type="radio" id="male" name="radioBt" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="radioBt" value="female">
+                    <label for="female">Female</label><br>
+
+                    <div>
+                        <input class="form-button" id="submit" name="button" onclick="submit()" type="button" value="submit">
+                    </div>
+                    
+                    <div>
+                        <input class="form-button" id="save" name="button" onclick="save()" type="button" value="save">
+                    </div>
+                </form>
+            </div>
+
+            <div id="answers" class="column-class">
+                <div id="predict" class="information-item">Prediction</div>
+                <div id="genderType"></div>
+                <div id="score"></div>
+
+                <div id="savedAnswer">Saved answer</div>
+                <div id="savedGender"></div>
+                <div id="savedScore"></div>
+                <input id="removeBt" name="button" onclick="remove()" type="button" value="remove">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
