@@ -24,23 +24,26 @@
                     <div class="form-item">
                         <div>
                             <label id="name" for="username">Name:</label>
-                            <input name="username" id="username" type="text" class="hover">
+                            <input name="username" id="username" type="text" class="hover" placeholder="e.g. Sina" required>
                         </div>
                     </div>
                     
                     <p>Specified gender:</p>
-                    <input type="radio" id="male" name="radioBt" value="male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="radioBt" value="female">
-                    <label for="female">Female</label><br>
+                    <div class="wrapper">
+                        <input type="radio" name="select" id="option-1" checked>
+                        <input type="radio" name="select" id="option-2">
+                        <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>Male</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>Female</span>
+                        </label>
+                    </div><br> 
 
-                    <div>
-                        <input class="form-button" id="submit" name="button" onclick="submit()" type="button" value="submit">
-                    </div>
-                    
-                    <div>
-                        <input class="form-button" id="save" name="button" onclick="save()" type="button" value="save">
-                    </div>
+                    <button class="form-button" id="submit" onclick="submit()" style="vertical-align:middle"><span>Submit </span></button><br>
+                    <button class="form-button" id="save" onclick="save()" style="vertical-align:middle"><span>Save </span></button>
                 </form>
             </div>
 
@@ -52,7 +55,7 @@
                 <div id="savedAnswer">Saved answer</div>
                 <div id="savedGender"></div>
                 <div id="savedScore"></div>
-                <input id="removeBt" name="button" onclick="remove()" type="button" value="remove">
+                <button class="form-button" id="remove" onclick="remove()" style="vertical-align:middle"><span>Remove </span></button>
             </div>
         </div>
     </div>
