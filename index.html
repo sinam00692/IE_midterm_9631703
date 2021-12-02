@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div id="notifier" class="notify"><span id="notifierText" class=""></span></div>
     <div id="mainFrame" class="main">
         <div id="contentFrame" class="container">
             <div id="forum" class="column-class">
@@ -41,20 +42,22 @@
                             <span>Female</span>
                         </label>
                     </div><br> 
-
-                    <button class="form-button" id="submit" onclick="submit()" style="vertical-align:middle"><span>Submit </span></button><br>
-                    <button class="form-button" id="save" onclick="save()" style="vertical-align:middle"><span>Save </span></button>
                 </form>
+                <button class="form-button" id="submit" onclick="submit()" style="vertical-align:middle"><span>Submit </span></button><br>
+                <button class="form-button" id="save" onclick="save()" style="vertical-align:middle"><span>Save </span></button>
             </div>
 
             <div id="answers" class="column-class">
-                <div id="predict" class="information-item">Prediction</div>
-                <div id="genderType"></div>
-                <div id="score"></div>
-
-                <div id="savedAnswer">Saved answer</div>
-                <div id="savedGender"></div>
-                <div id="savedScore"></div>
+                <div class="perdiction">
+                    <div id="predict" class="texts">Prediction:</div>
+                    <div id="genderType" class="texts1"></div>
+                    <div id="score" class="texts1"></div>
+                </div>
+                <div class="answer">
+                    <div id="savedAnswer" class="texts">Saved answer:</div>
+                    <div id="savedGender" class="texts1"></div>
+                    <div id="savedScore" class="texts1"></div>
+                </div>
                 <button class="form-button" id="remove" onclick="remove()" style="vertical-align:middle"><span>Remove </span></button>
             </div>
         </div>

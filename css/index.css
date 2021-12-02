@@ -21,6 +21,7 @@ body {
     background: rgba(17, 6, 6, 0.8);
     
     margin-top: 100px;
+    margin-bottom: 100px;
 
     border-radius: 8px 8px 8px 8px;
     border-color: #23282d;
@@ -203,4 +204,53 @@ input[type="radio"]{
 #option-1:checked:checked ~ .option-1 span,
 #option-2:checked:checked ~ .option-2 span{
     color: #fff;
+}
+
+.perdiction{
+    height: 40%;
+    color: #FFFFFF;
+    padding: 20px;
+    border: 2px solid #f4511e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(8, 49, 124, 0.25);
+}
+
+.answer{
+    height: 40%;
+    color: #FFFFFF;
+    padding: 20px;
+    border: 2px solid #f4511e;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    background-color: rgba(8, 49, 124, 0.25);
+}
+
+.texts {
+    padding: 5px 5px 0 0;
+}
+
+.texts1 {
+    margin-left: 10%;
+    padding: 5px 5px 0 0;
+}
+
+.notify {
+    position: fixed;
+    top: 20px;
+    width: 50%;
+    height: 0;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: height .8s;
+    max-height: 10%;
+    border-radius: 8px;
+}
+
+#notifierText{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    display: inline-block;
 }
